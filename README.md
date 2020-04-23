@@ -5,3 +5,13 @@ Server will be responsible for taking different snippets/ portion of HTML and wi
 
 
 For security purposes, we used Hashing Algorithm for the password. Since other people use common password(ex: monkey,password, etc) We added the Salt method to generate random characters.
+
+For Routes directories:
+
+admin/auth.js - all authentication.
+
+admin/products.js - allow admin to create, edit, delete products.
+
+products.js - for users viewing products
+
+cart.js - for showing cart.
