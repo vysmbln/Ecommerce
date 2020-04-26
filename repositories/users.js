@@ -48,7 +48,7 @@ class UsersRepository {
         //saved ->password saved in out database. 'hashed.salt'
         //supplied ->password given to us by user trying to sign in
 
-        const [hashed, salt] = saved.split('.')
+        const [hashed, salt] = saved.split('.');
         const hashedSuppliedBuf = await scrypt(supplied, salt, 64);
 
         return hashed === hashedSuppliedBuf.toString('hex');
